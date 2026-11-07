@@ -65,3 +65,4 @@ Then open [http://localhost:3000](http://localhost:3000) in your web browser.
 ---
 
 &copy; 2026 Maria Hayet Puthi. All rights reserved.
+
