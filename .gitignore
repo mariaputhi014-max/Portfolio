@@ -1,0 +1,13 @@
+# Dependencies & Cache
+node_modules/
+.vscode/
+.idea/
+*.log
+
+# Python cache / temporary scripts
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
