@@ -3,49 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Maria Hayet Puthi - Full-Stack Developer & AI Enthusiast based in Dhaka, Bangladesh. Explore full-stack web applications, tech stack, and experience.">
-  <meta name="keywords" content="Maria Hayet Puthi, Full-Stack Developer, AI Enthusiast, React, Node.js, Python, Supabase, MySQL, Portfolio, AIUB">
+  <meta name="description" content="Maria Hayet Puthi - Full-Stack Developer & AI Enthusiast based in Dhaka, Bangladesh. Final-year CSE student at AIUB. View projects, engineering skills, and resume.">
+  <meta name="keywords" content="Maria Hayet Puthi, Full-Stack Developer, Software Engineer, React, Node.js, Python, Supabase, MySQL, AIUB, Portfolio">
   <meta name="author" content="Maria Hayet Puthi">
   <meta property="og:title" content="Maria Hayet Puthi | Full-Stack Developer & AI Enthusiast">
-  <meta property="og:description" content="Explore the portfolio of Maria Hayet Puthi - Full-Stack Developer & AI Enthusiast specializing in React, Node.js, Python, and modern web applications.">
+  <meta property="og:description" content="Professional portfolio of Maria Hayet Puthi - Software Engineer specializing in modern full-stack web architectures and AI-assisted workflows.">
   <meta property="og:type" content="website">
 
   <title>Maria Hayet Puthi | Full-Stack Developer & AI Enthusiast</title>
 
-  <!-- Google Fonts: Space Grotesk & Poppins -->
+  <!-- Google Fonts: Plus Jakarta Sans & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Space+Grotesk:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-  <!-- Custom Stylesheet -->
+  <!-- Professional Corporate Stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Ambient Cursor Glow Effect -->
-  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
-
-  <!-- Background Cyber Grid Overlay -->
-  <div class="cyber-grid" aria-hidden="true"></div>
-
-  <!-- Flanking Left & Right Vertical Wave Stands (Running Top to Bottom of the Site) -->
-  <aside class="site-side-stand stand-left" id="standLeft" aria-hidden="true">
-    <div class="side-stand-track"></div>
-    <canvas id="leftStandWaveCanvas" class="side-stand-canvas"></canvas>
-  </aside>
-  <aside class="site-side-stand stand-right" id="standRight" aria-hidden="true">
-    <div class="side-stand-track"></div>
-    <canvas id="rightStandWaveCanvas" class="side-stand-canvas"></canvas>
-  </aside>
-
-  <!-- Navigation Bar -->
+  <!-- Header / Navigation -->
   <header class="navbar-wrapper" id="navbar">
     <nav class="navbar container">
       <!-- Brand Logo -->
-      <a href="#hero" class="nav-logo" aria-label="Maria Hayet Puthi Home">
-        <span class="logo-bracket">&lt;</span><span class="logo-name">MHP</span><span class="logo-dot">.</span><span class="logo-bracket">/&gt;</span>
+      <a href="#hero" class="nav-brand" aria-label="Maria Hayet Puthi">
+        <span class="brand-badge">MHP</span>
+        <span class="brand-name">Maria Puthi</span>
       </a>
 
       <!-- Desktop Navigation Menu -->
@@ -60,11 +45,11 @@
         <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
 
-      <!-- Nav CTA & Mobile Toggle -->
+      <!-- Nav CTA & Mobile Menu Toggle -->
       <div class="nav-actions">
-        <a href="#contact" class="btn btn-sm btn-neon-blue desktop-only">
-          <i class="fa-solid fa-paper-plane"></i>
-          <span>Let's Talk</span>
+        <a href="#contact" class="btn btn-sm btn-primary desktop-only">
+          <span>Get in Touch</span>
+          <i class="fa-solid fa-arrow-right"></i>
         </a>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <span class="toggle-bar"></span>
@@ -75,23 +60,24 @@
     </nav>
   </header>
 
-  <!-- Mobile Navigation Drawer -->
+  <!-- Mobile Drawer Navigation -->
   <div class="mobile-drawer" id="mobileDrawer">
     <div class="mobile-drawer-header">
-      <div class="nav-logo">
-        <span class="logo-bracket">&lt;</span><span class="logo-name">Maria</span><span class="logo-dot">.</span><span class="logo-bracket">/&gt;</span>
+      <div class="nav-brand">
+        <span class="brand-badge">MHP</span>
+        <span class="brand-name">Maria Puthi</span>
       </div>
-      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close menu">
+      <button class="mobile-drawer-close" id="mobileDrawerClose" aria-label="Close navigation">
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
     <ul class="mobile-nav-links">
       <li><a href="#hero" class="mobile-link"><i class="fa-solid fa-house"></i> Home</a></li>
-      <li><a href="#about" class="mobile-link"><i class="fa-solid fa-user-astronaut"></i> About</a></li>
+      <li><a href="#about" class="mobile-link"><i class="fa-solid fa-user"></i> About</a></li>
       <li><a href="#skills" class="mobile-link"><i class="fa-solid fa-layer-group"></i> Skills</a></li>
       <li><a href="#education" class="mobile-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
       <li><a href="#projects" class="mobile-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
-      <li><a href="#video" class="mobile-link"><i class="fa-solid fa-play"></i> Video</a></li>
+      <li><a href="#video" class="mobile-link"><i class="fa-solid fa-video"></i> Video</a></li>
       <li><a href="#resume" class="mobile-link"><i class="fa-solid fa-file-lines"></i> Resume</a></li>
       <li><a href="#contact" class="mobile-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
     </ul>
@@ -105,135 +91,96 @@
   </div>
   <div class="drawer-backdrop" id="drawerBackdrop"></div>
 
-  <!-- Main Content Wrapper -->
+  <!-- Main Content -->
   <main>
     <!-- ==================== 1. HERO SECTION ==================== -->
     <section class="hero-section" id="hero">
-      <!-- Interactive HTML5 Particle Canvas -->
-      <canvas id="particleCanvas" class="hero-particles" aria-hidden="true"></canvas>
-
       <div class="container hero-container">
         <div class="hero-grid">
-          <!-- Left Content -->
+          <!-- Left: Hero Overview & Value Proposition -->
           <div class="hero-content reveal-on-scroll">
-            <!-- Availability Badge -->
-            <div class="hero-badge">
-              <span class="badge-pulse"></span>
-              <span class="badge-text">Available for Opportunities</span>
+            <!-- Professional Availability Badge -->
+            <div class="status-badge">
+              <span class="status-indicator"></span>
+              <span class="status-text">Available for Opportunities</span>
             </div>
 
-            <p class="hero-greeting">
-              <span class="terminal-prompt">&gt;</span> Hello world, I am
-            </p>
-
             <h1 class="hero-title">
-              Maria Hayet <span class="neon-name-glow">Puthi</span>
+              Hi, I'm <span class="text-accent">Maria Hayet Puthi</span>
             </h1>
 
-            <!-- Typing Animation Container -->
-            <div class="hero-role-box">
-              <span class="role-prefix">I am a </span>
-              <span class="typing-text" id="typingText">Full-Stack Developer</span>
-              <span class="typing-cursor" aria-hidden="true">_</span>
+            <div class="hero-role-wrapper">
+              <span class="role-static">Specializing in </span>
+              <span class="typing-text" id="typingText">Full-Stack Development</span>
+              <span class="typing-cursor" aria-hidden="true">|</span>
             </div>
 
             <p class="hero-description">
-              Final-year CSE student at AIUB passionate about engineering scalable 
-              full-stack applications, robust backend architectures, and AI-accelerated workflows. 
-              Based in Dhaka, Bangladesh.
+              Final-year Computer Science and Engineering student at American International University-Bangladesh (AIUB) with a <strong>CGPA of 3.61/4.00</strong>. Passionate about engineering high-performance web applications, robust backends, and AI-accelerated development workflows. Based in Dhaka, Bangladesh.
             </p>
 
-            <!-- CTA Buttons -->
+            <!-- Professional CTA Buttons -->
             <div class="hero-cta-group">
-              <a href="#projects" class="btn btn-primary btn-neon-blue">
-                <i class="fa-solid fa-code"></i>
-                <span>View Projects</span>
-                <span class="btn-glow"></span>
+              <a href="#projects" class="btn btn-primary">
+                <span>View Featured Projects</span>
+                <i class="fa-solid fa-arrow-right"></i>
               </a>
-              <a href="cv.pdf" download="Maria_Hayet_Puthi_CV.pdf" class="btn btn-secondary btn-neon-purple">
-                <i class="fa-solid fa-file-arrow-down"></i>
+              <a href="cv.pdf" download="Maria_Hayet_Puthi_CV.pdf" class="btn btn-secondary" id="heroCvBtn">
+                <i class="fa-solid fa-download"></i>
                 <span>Download CV</span>
-                <span class="btn-glow"></span>
               </a>
             </div>
 
-            <!-- Social Links -->
-            <div class="hero-social-strip">
-              <span class="social-label">Connect:</span>
-              <a href="https://github.com/mariaputhi014-max" target="_blank" rel="noopener noreferrer" class="social-icon-btn github-neon" aria-label="GitHub Profile">
-                <i class="fa-brands fa-github"></i>
-                <span class="social-tooltip">github.com/mariaputhi014-max</span>
-              </a>
-              <a href="mailto:mariaputhi014@gmail.com" class="social-icon-btn email-neon" aria-label="Email Me">
-                <i class="fa-solid fa-envelope"></i>
-                <span class="social-tooltip">mariaputhi014@gmail.com</span>
-              </a>
-              <a href="tel:+8801609651151" class="social-icon-btn phone-neon" aria-label="Call Me">
-                <i class="fa-solid fa-phone"></i>
-                <span class="social-tooltip">+880 1609651151</span>
-              </a>
+            <!-- Direct Contact & Social Links -->
+            <div class="hero-meta-row">
+              <div class="meta-item-pill">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Dhaka, Bangladesh</span>
+              </div>
+              <div class="social-links-inline">
+                <a href="https://github.com/mariaputhi014-max" target="_blank" rel="noopener noreferrer" class="social-circle-link" title="GitHub Profile">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="mailto:mariaputhi014@gmail.com" class="social-circle-link" title="Send Email">
+                  <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="tel:+8801609651151" class="social-circle-link" title="Direct Call">
+                  <i class="fa-solid fa-phone"></i>
+                </a>
+              </div>
             </div>
           </div>
 
-          <!-- Right Profile Avatar with Rotating Neon Border & Wave Animations -->
-          <div class="hero-avatar-wrapper reveal-on-scroll">
-            <div class="avatar-neon-frame" id="avatarNeonFrame">
-              <!-- Animated Expanding Radar/Wave Pulse Rings -->
-              <div class="avatar-pulse-ring pulse-1" aria-hidden="true"></div>
-              <div class="avatar-pulse-ring pulse-2" aria-hidden="true"></div>
-
-              <!-- Outer Rotating Neon Gradient Ring -->
-              <div class="rotating-ring ring-outer" aria-hidden="true"></div>
-              <!-- Inner Counter-Rotating Gradient Ring -->
-              <div class="rotating-ring ring-inner" aria-hidden="true"></div>
-
-              <!-- Orbiting Glowing Energy Satellites -->
-              <div class="avatar-orbit orbit-cw" aria-hidden="true">
-                <span class="orbit-bead cyan"></span>
-              </div>
-              <div class="avatar-orbit orbit-ccw" aria-hidden="true">
-                <span class="orbit-bead pink"></span>
-              </div>
-              
-              <!-- Avatar Card Core -->
-              <div class="avatar-card" id="avatarCard">
-                <!-- Holographic Scanning Beam -->
-                <div class="holo-scanline" aria-hidden="true"></div>
-                <!-- Real Profile Photo -->
-                <div class="avatar-visual">
-                  <img src="assets/profile.jpg" alt="Maria Hayet Puthi" class="profile-photo">
+          <!-- Right: Professional Profile Photo Frame -->
+          <div class="hero-profile-wrapper reveal-on-scroll">
+            <div class="profile-frame">
+              <div class="profile-card">
+                <div class="profile-photo-container">
+                  <img src="assets/profile.jpg" alt="Maria Hayet Puthi - Full-Stack Developer" class="profile-photo" loading="eager">
                 </div>
-                <!-- Avatar Label -->
-                <div class="avatar-label">
-                  <span class="avatar-name">Maria Hayet Puthi</span>
-                  <span class="avatar-tag">Dhaka, Bangladesh</span>
+                <div class="profile-meta-banner">
+                  <span class="profile-name">Maria Hayet Puthi</span>
+                  <span class="profile-tagline">Full-Stack Developer | AI Enthusiast</span>
                 </div>
               </div>
 
-              <!-- Floating Micro-badges -->
-              <div class="floating-badge badge-top-left" data-speed="1.2">
-                <i class="fa-solid fa-code-merge text-neon-cyan"></i>
-                <span>Full-Stack</span>
+              <!-- Professional Credential Pills -->
+              <div class="badge-pill badge-aiub">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span>AIUB CSE '27 (CGPA 3.61)</span>
               </div>
-              <div class="floating-badge badge-top-right" data-speed="0.8">
-                <i class="fa-solid fa-brain text-neon-purple"></i>
-                <span>AI Enthusiast</span>
-              </div>
-              <div class="floating-badge badge-bottom-right" data-speed="1.5">
-                <i class="fa-solid fa-graduation-cap text-neon-pink"></i>
-                <span>AIUB '27</span>
+              <div class="badge-pill badge-stack">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>React &amp; Node.js Full-Stack</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Scroll-Down Indicator -->
-        <a href="#about" class="scroll-down-wrapper" aria-label="Scroll to About section">
-          <span class="mouse-icon">
-            <span class="mouse-wheel"></span>
-          </span>
-          <span class="scroll-arrow"><i class="fa-solid fa-angles-down"></i></span>
-          <span class="scroll-text">EXPLORE</span>
+        <!-- Scroll Indicator -->
+        <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+          <span class="scroll-label">Scroll to explore</span>
+          <i class="fa-solid fa-chevron-down"></i>
         </a>
       </div>
     </section>
@@ -241,369 +188,269 @@
     <!-- ==================== 2. ABOUT ME SECTION ==================== -->
     <section class="section about-section" id="about">
       <div class="container">
-        <!-- Section Header -->
         <div class="section-header text-center reveal-on-scroll">
-          <p class="section-subtitle">// 01. WHO I AM</p>
-          <h2 class="section-title">About <span class="neon-gradient-text">Me</span></h2>
-          <div class="neon-title-bar"></div>
+          <p class="section-subtitle">PROFESSIONAL PROFILE</p>
+          <h2 class="section-title">About Me</h2>
+          <div class="section-divider"></div>
         </div>
 
         <div class="about-grid">
-          <!-- Bio Glass Card -->
-          <div class="glass-card bio-card reveal-on-scroll">
-            <div class="card-glow-edge"></div>
-            <div class="card-header-bar">
-              <span class="terminal-dot red"></span>
-              <span class="terminal-dot yellow"></span>
-              <span class="terminal-dot green"></span>
-              <span class="terminal-title">bio.md - Maria Hayet Puthi</span>
-            </div>
-
-            <div class="bio-content">
-              <h3 class="bio-heading">
-                Building Real-World Digital Solutions With Modern Architecture & AI
+          <!-- Executive Bio Card -->
+          <div class="card about-bio-card reveal-on-scroll">
+            <div class="card-inner">
+              <h3 class="card-heading">
+                Engineering Practical, Scalable Solutions with Modern Web Tech &amp; AI
               </h3>
-              <p class="bio-text">
-                Final-year Computer Science and Engineering student at American 
-                International University-Bangladesh (AIUB) with a CGPA of 3.61/4.00. 
-                Passionate about building full-stack web applications and exploring 
-                AI-assisted software development workflows. I enjoy turning ideas into 
-                functional, real-world digital solutions.
+              <p class="bio-paragraph">
+                Final-year Computer Science and Engineering student at American International University-Bangladesh (AIUB) with a CGPA of 3.61/4.00. Passionate about building full-stack web applications and exploring AI-assisted software development workflows. I enjoy turning ideas into functional, real-world digital solutions.
               </p>
-              <p class="bio-text secondary">
-                With a strong foundation in full-stack architecture, database design (MySQL, Supabase), 
-                and modern frameworks (React.js, Node.js, Python), I independently take projects from 
-                concept to deployment while leveraging AI tools (ChatGPT, Claude) to elevate code quality 
-                and development velocity.
+              <p class="bio-paragraph muted">
+                Experienced in independently planning, building, and delivering complete web applications across frontend architectures, database schemas (MySQL, Supabase), and server logic (Node.js, Python). I incorporate modern AI developer tooling (ChatGPT, Claude) to optimize code quality, maintain rigorous testing, and accelerate implementation timelines.
               </p>
 
-              <!-- Quick Info List -->
-              <div class="bio-meta-grid">
-                <div class="meta-item">
-                  <span class="meta-label"><i class="fa-solid fa-location-dot text-neon-cyan"></i> Location:</span>
-                  <span class="meta-value">Dhaka, Bangladesh</span>
+              <!-- Key Strengths Grid -->
+              <div class="strengths-grid">
+                <div class="strength-item">
+                  <div class="strength-icon"><i class="fa-solid fa-check"></i></div>
+                  <div>
+                    <strong>Full-Stack Architecture</strong>
+                    <p>End-to-end web applications with clean separation of concerns.</p>
+                  </div>
                 </div>
-                <div class="meta-item">
-                  <span class="meta-label"><i class="fa-solid fa-building-columns text-neon-purple"></i> University:</span>
-                  <span class="meta-value">AIUB (B.Sc. in CSE)</span>
+                <div class="strength-item">
+                  <div class="strength-icon"><i class="fa-solid fa-check"></i></div>
+                  <div>
+                    <strong>AI-Assisted Engineering</strong>
+                    <p>Deep workflow integration for enhanced productivity and debugging.</p>
+                  </div>
                 </div>
-                <div class="meta-item">
-                  <span class="meta-label"><i class="fa-solid fa-award text-neon-pink"></i> CGPA:</span>
-                  <span class="meta-value highlight-cyan">3.61 / 4.00</span>
+                <div class="strength-item">
+                  <div class="strength-icon"><i class="fa-solid fa-check"></i></div>
+                  <div>
+                    <strong>Database Engineering</strong>
+                    <p>Relational schema design, querying, and real-time backend services.</p>
+                  </div>
                 </div>
-                <div class="meta-item">
-                  <span class="meta-label"><i class="fa-solid fa-language text-neon-cyan"></i> Languages:</span>
-                  <span class="meta-value">English (Fluent), Bangla (Native)</span>
+                <div class="strength-item">
+                  <div class="strength-icon"><i class="fa-solid fa-check"></i></div>
+                  <div>
+                    <strong>Self-Directed Execution</strong>
+                    <p>High ownership from initial requirements to successful delivery.</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Highlight Metric Stats -->
-          <div class="about-stats-grid reveal-on-scroll">
-            <div class="glass-card stat-card border-glow-blue">
-              <div class="stat-icon-wrap cyan">
-                <i class="fa-solid fa-star-half-stroke"></i>
-              </div>
-              <div class="stat-number">3.61</div>
-              <div class="stat-label">AIUB CGPA / 4.00</div>
-              <div class="stat-desc">Consistent academic excellence in CSE</div>
+          <!-- Key Metrics Column -->
+          <div class="metrics-grid reveal-on-scroll">
+            <div class="card metric-card">
+              <div class="metric-value">3.61 <span class="metric-scale">/ 4.00</span></div>
+              <div class="metric-label">AIUB Academic CGPA</div>
+              <p class="metric-desc">High academic standing in B.Sc. in Computer Science &amp; Engineering.</p>
             </div>
 
-            <div class="glass-card stat-card border-glow-purple">
-              <div class="stat-icon-wrap purple">
-                <i class="fa-solid fa-layer-group"></i>
-              </div>
-              <div class="stat-number">Full-Stack</div>
-              <div class="stat-label">Frontend & Backend</div>
-              <div class="stat-desc">React, Node.js, Python & SQL</div>
+            <div class="card metric-card">
+              <div class="metric-value">2027</div>
+              <div class="metric-label">Expected Graduation</div>
+              <p class="metric-desc">Final-year undergraduate student actively taking on contract and full-time roles.</p>
             </div>
 
-            <div class="glass-card stat-card border-glow-pink">
-              <div class="stat-icon-wrap pink">
-                <i class="fa-solid fa-wand-magic-sparkles"></i>
-              </div>
-              <div class="stat-number">AI-Driven</div>
-              <div class="stat-label">Development Workflow</div>
-              <div class="stat-desc">Prompt engineering, debugging & speed</div>
+            <div class="card metric-card">
+              <div class="metric-value">2+</div>
+              <div class="metric-label">Core Full-Stack Platforms</div>
+              <p class="metric-desc">Independently architected multi-role platforms deployed with modern stacks.</p>
             </div>
 
-            <div class="glass-card stat-card border-glow-blue">
-              <div class="stat-icon-wrap cyan">
-                <i class="fa-solid fa-circle-check"></i>
-              </div>
-              <div class="stat-number">100%</div>
-              <div class="stat-label">Self-Directed Execution</div>
-              <div class="stat-desc">Independent lifecycle management</div>
+            <div class="card metric-card">
+              <div class="metric-value">100%</div>
+              <div class="metric-label">Dedication to Quality</div>
+              <p class="metric-desc">Version-controlled Git workflows, responsive design, and maintainable code.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== SKILLS SUB-SECTION ==================== -->
+    <!-- ==================== 3. TECHNICAL SKILLS SECTION ==================== -->
     <section class="section skills-section" id="skills">
       <div class="container">
         <div class="section-header text-center reveal-on-scroll">
-          <p class="section-subtitle">// 02. TECH STACK</p>
-          <h2 class="section-title">Technical <span class="neon-gradient-text">Skills</span></h2>
-          <div class="neon-title-bar"></div>
-          <p class="section-lead-text">
-            Specialized toolkit spanning frontend engineering, scalable backend logic, relational databases, and AI-assisted workflows.
+          <p class="section-subtitle">CORE COMPETENCIES</p>
+          <h2 class="section-title">Technical Skills</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            A comprehensive overview of programming languages, frontend and backend technologies, databases, and AI tooling.
           </p>
         </div>
 
-        <!-- Animated Skill Badges Grid -->
-        <div class="skills-grid reveal-on-scroll">
-          <!-- Skill: HTML5 -->
-          <div class="skill-badge-pill" data-tech="html5">
-            <div class="skill-icon-box html-glow">
-              <i class="fa-brands fa-html5"></i>
+        <div class="skills-category-grid reveal-on-scroll">
+          <!-- Programming Languages -->
+          <div class="card skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-code category-icon"></i>
+              <h3 class="category-title">Programming Languages</h3>
             </div>
-            <div class="skill-details">
-              <span class="skill-name">HTML5</span>
-              <span class="skill-cat">Frontend</span>
+            <div class="skill-chips-group">
+              <div class="skill-chip"><i class="fa-brands fa-python"></i> <span>Python</span></div>
+              <div class="skill-chip"><i class="fa-brands fa-js"></i> <span>JavaScript (ES6+)</span></div>
             </div>
-            <div class="skill-pulse-ring"></div>
           </div>
 
-          <!-- Skill: CSS3 -->
-          <div class="skill-badge-pill" data-tech="css3">
-            <div class="skill-icon-box css-glow">
-              <i class="fa-brands fa-css3-alt"></i>
+          <!-- Frontend Development -->
+          <div class="card skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-laptop-code category-icon"></i>
+              <h3 class="category-title">Frontend Development</h3>
             </div>
-            <div class="skill-details">
-              <span class="skill-name">CSS3</span>
-              <span class="skill-cat">Styling & Grid/Flex</span>
+            <div class="skill-chips-group">
+              <div class="skill-chip"><i class="fa-brands fa-react"></i> <span>React.js</span></div>
+              <div class="skill-chip"><i class="fa-brands fa-html5"></i> <span>HTML5</span></div>
+              <div class="skill-chip"><i class="fa-brands fa-css3-alt"></i> <span>CSS3</span></div>
+              <div class="skill-chip"><i class="fa-solid fa-mobile-screen"></i> <span>Responsive Design</span></div>
             </div>
-            <div class="skill-pulse-ring"></div>
           </div>
 
-          <!-- Skill: React.js -->
-          <div class="skill-badge-pill" data-tech="react">
-            <div class="skill-icon-box react-glow">
-              <i class="fa-brands fa-react"></i>
+          <!-- Backend Development -->
+          <div class="card skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-server category-icon"></i>
+              <h3 class="category-title">Backend Development</h3>
             </div>
-            <div class="skill-details">
-              <span class="skill-name">React.js</span>
-              <span class="skill-cat">UI Architecture</span>
+            <div class="skill-chips-group">
+              <div class="skill-chip"><i class="fa-brands fa-node-js"></i> <span>Node.js</span></div>
+              <div class="skill-chip"><i class="fa-brands fa-python"></i> <span>Python Services</span></div>
+              <div class="skill-chip"><i class="fa-solid fa-network-wired"></i> <span>RESTful APIs</span></div>
             </div>
-            <div class="skill-pulse-ring"></div>
           </div>
 
-          <!-- Skill: Python -->
-          <div class="skill-badge-pill" data-tech="python">
-            <div class="skill-icon-box python-glow">
-              <i class="fa-brands fa-python"></i>
+          <!-- Database Management -->
+          <div class="card skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-database category-icon"></i>
+              <h3 class="category-title">Database Management</h3>
             </div>
-            <div class="skill-details">
-              <span class="skill-name">Python</span>
-              <span class="skill-cat">Backend & Scripting</span>
+            <div class="skill-chips-group">
+              <div class="skill-chip"><i class="fa-solid fa-database"></i> <span>MySQL</span></div>
+              <div class="skill-chip"><i class="fa-solid fa-bolt"></i> <span>Supabase</span></div>
+              <div class="skill-chip"><i class="fa-solid fa-table"></i> <span>Relational Modeling</span></div>
             </div>
-            <div class="skill-pulse-ring"></div>
           </div>
 
-          <!-- Skill: Node.js -->
-          <div class="skill-badge-pill" data-tech="nodejs">
-            <div class="skill-icon-box node-glow">
-              <i class="fa-brands fa-node-js"></i>
+          <!-- Development Tools & Workflow -->
+          <div class="card skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-toolbox category-icon"></i>
+              <h3 class="category-title">Development Tools</h3>
             </div>
-            <div class="skill-details">
-              <span class="skill-name">Node.js</span>
-              <span class="skill-cat">REST APIs & Server</span>
+            <div class="skill-chips-group">
+              <div class="skill-chip"><i class="fa-brands fa-git-alt"></i> <span>Git</span></div>
+              <div class="skill-chip"><i class="fa-brands fa-github"></i> <span>GitHub</span></div>
+              <div class="skill-chip"><i class="fa-solid fa-terminal"></i> <span>VS Code</span></div>
             </div>
-            <div class="skill-pulse-ring"></div>
           </div>
 
-          <!-- Skill: MySQL -->
-          <div class="skill-badge-pill" data-tech="mysql">
-            <div class="skill-icon-box mysql-glow">
-              <i class="fa-solid fa-database"></i>
+          <!-- AI-Assisted Development -->
+          <div class="card skill-category-card">
+            <div class="category-header">
+              <i class="fa-solid fa-brain category-icon"></i>
+              <h3 class="category-title">AI-Assisted Workflows</h3>
             </div>
-            <div class="skill-details">
-              <span class="skill-name">MySQL</span>
-              <span class="skill-cat">Relational Schema</span>
+            <div class="skill-chips-group">
+              <div class="skill-chip"><i class="fa-solid fa-robot"></i> <span>ChatGPT</span></div>
+              <div class="skill-chip"><i class="fa-solid fa-wand-magic-sparkles"></i> <span>Claude</span></div>
+              <div class="skill-chip"><i class="fa-solid fa-bolt-lightning"></i> <span>AI Code Gen &amp; Debugging</span></div>
             </div>
-            <div class="skill-pulse-ring"></div>
-          </div>
-
-          <!-- Skill: Supabase -->
-          <div class="skill-badge-pill" data-tech="supabase">
-            <div class="skill-icon-box supabase-glow">
-              <i class="fa-solid fa-bolt"></i>
-            </div>
-            <div class="skill-details">
-              <span class="skill-name">Supabase</span>
-              <span class="skill-cat">BaaS & Realtime Auth</span>
-            </div>
-            <div class="skill-pulse-ring"></div>
-          </div>
-
-          <!-- Skill: Git -->
-          <div class="skill-badge-pill" data-tech="git">
-            <div class="skill-icon-box git-glow">
-              <i class="fa-brands fa-git-alt"></i>
-            </div>
-            <div class="skill-details">
-              <span class="skill-name">Git</span>
-              <span class="skill-cat">Version Control</span>
-            </div>
-            <div class="skill-pulse-ring"></div>
-          </div>
-
-          <!-- Skill: GitHub -->
-          <div class="skill-badge-pill" data-tech="github">
-            <div class="skill-icon-box github-glow">
-              <i class="fa-brands fa-github"></i>
-            </div>
-            <div class="skill-details">
-              <span class="skill-name">GitHub</span>
-              <span class="skill-cat">Collaboration & CI</span>
-            </div>
-            <div class="skill-pulse-ring"></div>
-          </div>
-
-          <!-- Skill: ChatGPT -->
-          <div class="skill-badge-pill" data-tech="chatgpt">
-            <div class="skill-icon-box chatgpt-glow">
-              <i class="fa-solid fa-robot"></i>
-            </div>
-            <div class="skill-details">
-              <span class="skill-name">ChatGPT</span>
-              <span class="skill-cat">AI Code & Debugging</span>
-            </div>
-            <div class="skill-pulse-ring"></div>
-          </div>
-
-          <!-- Skill: Claude -->
-          <div class="skill-badge-pill" data-tech="claude">
-            <div class="skill-icon-box claude-glow">
-              <i class="fa-solid fa-brain"></i>
-            </div>
-            <div class="skill-details">
-              <span class="skill-name">Claude</span>
-              <span class="skill-cat">AI Workflow & Architecture</span>
-            </div>
-            <div class="skill-pulse-ring"></div>
-          </div>
-
-          <!-- Skill: JavaScript -->
-          <div class="skill-badge-pill" data-tech="javascript">
-            <div class="skill-icon-box js-glow">
-              <i class="fa-brands fa-js"></i>
-            </div>
-            <div class="skill-details">
-              <span class="skill-name">JavaScript</span>
-              <span class="skill-cat">ES6+ & Async Programming</span>
-            </div>
-            <div class="skill-pulse-ring"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 3. EDUCATION SECTION ==================== -->
+    <!-- ==================== 4. EDUCATION SECTION ==================== -->
     <section class="section education-section" id="education">
       <div class="container">
         <div class="section-header text-center reveal-on-scroll">
-          <p class="section-subtitle">// 03. ACADEMIC BACKGROUND</p>
-          <h2 class="section-title">Education <span class="neon-gradient-text">& Journey</span></h2>
-          <div class="neon-title-bar"></div>
-          <p class="section-lead-text">
-            A track record of academic dedication, computer science fundamentals, and consistent top-tier results.
+          <p class="section-subtitle">ACADEMIC BACKGROUND</p>
+          <h2 class="section-title">Education &amp; Journey</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            A continuous record of high academic performance and foundational computer science study.
           </p>
         </div>
 
-        <!-- Vertical Animated Timeline Container -->
-        <div class="timeline-container" id="timelineContainer">
-          <!-- Glowing Central Neon Line & Animated Vertical Waveform Canvas -->
-          <div class="timeline-wave-wrapper" aria-hidden="true">
-            <div class="timeline-line" id="timelineLine"></div>
-            <canvas id="timelineWaveCanvas" class="timeline-wave-canvas"></canvas>
-          </div>
+        <div class="timeline-wrapper reveal-on-scroll">
+          <div class="timeline-line"></div>
 
-          <!-- Timeline Item 1: B.Sc. CSE AIUB -->
-          <div class="timeline-item timeline-left reveal-on-scroll">
-            <div class="timeline-marker">
-              <div class="marker-dot cyan"></div>
-              <div class="marker-pulse"></div>
-            </div>
-            <div class="timeline-content glass-card border-glow-blue">
-              <div class="timeline-badge-top">
-                <span class="badge-tag cyan"><i class="fa-solid fa-graduation-cap"></i> Higher Education</span>
-                <span class="badge-time">2023 - 2027 (Expected)</span>
+          <!-- Timeline 1: University -->
+          <div class="timeline-entry">
+            <div class="timeline-dot active"></div>
+            <div class="card timeline-card">
+              <div class="timeline-meta-bar">
+                <span class="timeline-badge primary">Undergraduate Degree</span>
+                <span class="timeline-period">2023 &ndash; 2027 (Expected)</span>
               </div>
               <h3 class="timeline-degree">Bachelor of Science in Computer Science and Engineering</h3>
-              <h4 class="timeline-institute">
-                <i class="fa-solid fa-university text-neon-cyan"></i> American International University-Bangladesh (AIUB)
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-building-columns"></i> American International University-Bangladesh (AIUB)
               </h4>
-              <div class="timeline-result-badge cyan">
-                <span class="result-label">Academic CGPA:</span>
-                <span class="result-score">3.61 / 4.00</span>
+              <div class="academic-score-pill">
+                <strong>Academic Standing:</strong> CGPA 3.61 / 4.00
               </div>
-              <p class="timeline-desc">
-                Focusing on full-stack software development, distributed systems, and real-world project design.
+              <p class="timeline-text">
+                Comprehensive study in computer science fundamentals, full-stack software development, distributed systems, and real-world system architecture.
               </p>
-              <div class="timeline-coursework">
-                <span class="coursework-title">Relevant Coursework:</span>
+              <div class="coursework-box">
+                <span class="coursework-label">Relevant Coursework:</span>
                 <div class="coursework-tags">
-                  <span class="course-pill">Data Structures & Algorithms</span>
-                  <span class="course-pill">Object-Oriented Programming</span>
-                  <span class="course-pill">Database Management Systems</span>
-                  <span class="course-pill">Web Technologies</span>
-                  <span class="course-pill">Software Engineering</span>
-                  <span class="course-pill">Computer Networks</span>
+                  <span class="course-tag">Data Structures &amp; Algorithms</span>
+                  <span class="course-tag">Object-Oriented Programming</span>
+                  <span class="course-tag">Database Management Systems</span>
+                  <span class="course-tag">Web Technologies</span>
+                  <span class="course-tag">Software Engineering</span>
+                  <span class="course-tag">Computer Networks</span>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Timeline Item 2: HSC -->
-          <div class="timeline-item timeline-right reveal-on-scroll">
-            <div class="timeline-marker">
-              <div class="marker-dot purple"></div>
-              <div class="marker-pulse"></div>
-            </div>
-            <div class="timeline-content glass-card border-glow-purple">
-              <div class="timeline-badge-top">
-                <span class="badge-tag purple"><i class="fa-solid fa-award"></i> College / HSC</span>
-                <span class="badge-time">Passing Year: 2021</span>
+          <!-- Timeline 2: HSC -->
+          <div class="timeline-entry">
+            <div class="timeline-dot"></div>
+            <div class="card timeline-card">
+              <div class="timeline-meta-bar">
+                <span class="timeline-badge">Higher Secondary Certificate</span>
+                <span class="timeline-period">Passing Year: 2021</span>
               </div>
               <h3 class="timeline-degree">Higher Secondary Certificate (HSC)</h3>
-              <h4 class="timeline-institute">
-                <i class="fa-solid fa-school text-neon-purple"></i> Baliakandi Government College, Dhaka
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-school"></i> Baliakandi Government College, Dhaka
               </h4>
-              <div class="timeline-result-badge purple">
-                <span class="result-label">Board Result:</span>
-                <span class="result-score">GPA 5.00 / 5.00 (Golden / Perfect)</span>
+              <div class="academic-score-pill">
+                <strong>Board Result:</strong> GPA 5.00 / 5.00 (Science Group)
               </div>
-              <p class="timeline-desc">
-                Disciplined study in the Science discipline with mathematics, physics, and chemistry laying solid analytical foundations.
+              <p class="timeline-text">
+                Rigorous curriculum covering mathematics, physics, and chemistry, providing strong analytical and problem-solving fundamentals.
               </p>
             </div>
           </div>
 
-          <!-- Timeline Item 3: SSC -->
-          <div class="timeline-item timeline-left reveal-on-scroll">
-            <div class="timeline-marker">
-              <div class="marker-dot pink"></div>
-              <div class="marker-pulse"></div>
-            </div>
-            <div class="timeline-content glass-card border-glow-pink">
-              <div class="timeline-badge-top">
-                <span class="badge-tag pink"><i class="fa-solid fa-medal"></i> High School / SSC</span>
-                <span class="badge-time">Passing Year: 2019</span>
+          <!-- Timeline 3: SSC -->
+          <div class="timeline-entry">
+            <div class="timeline-dot"></div>
+            <div class="card timeline-card">
+              <div class="timeline-meta-bar">
+                <span class="timeline-badge">Secondary School Certificate</span>
+                <span class="timeline-period">Passing Year: 2019</span>
               </div>
               <h3 class="timeline-degree">Secondary School Certificate (SSC)</h3>
-              <h4 class="timeline-institute">
-                <i class="fa-solid fa-school-flag text-neon-pink"></i> Balikandi Pilot Govt. Girls High School, Dhaka
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-school-flag"></i> Balikandi Pilot Govt. Girls High School, Dhaka
               </h4>
-              <div class="timeline-result-badge pink">
-                <span class="result-label">Board Result:</span>
-                <span class="result-score">GPA 5.00 / 5.00 (Golden / Perfect)</span>
+              <div class="academic-score-pill">
+                <strong>Board Result:</strong> GPA 5.00 / 5.00 (Science Group)
               </div>
-              <p class="timeline-desc">
-                Graduated with the highest academic honors in the Science group, fostering passion for computing and logical problem solving.
+              <p class="timeline-text">
+                Graduated with the highest academic distinction, fostering an early passion for technology and logical reasoning.
               </p>
             </div>
           </div>
@@ -611,341 +458,304 @@
       </div>
     </section>
 
-    <!-- ==================== 4. PROJECTS SECTION ==================== -->
+    <!-- ==================== 5. FEATURED PROJECTS SECTION ==================== -->
     <section class="section projects-section" id="projects">
       <div class="container">
         <div class="section-header text-center reveal-on-scroll">
-          <p class="section-subtitle">// 04. FEATURED WORK</p>
-          <h2 class="section-title">Featured <span class="neon-gradient-text">Projects</span></h2>
-          <div class="neon-title-bar"></div>
-          <p class="section-lead-text">
-            End-to-end full-stack applications built to solve genuine societal and community needs.
+          <p class="section-subtitle">PORTFOLIO CASE STUDIES</p>
+          <h2 class="section-title">Featured Projects</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Production-grade full-stack web applications engineered to solve real-world community challenges.
           </p>
         </div>
 
         <div class="projects-grid">
           <!-- Project 1: ShareMeal -->
-          <div class="project-card-wrapper reveal-on-scroll">
-            <article class="project-card tilt-card glass-card border-glow-blue" data-tilt>
-              <div class="card-sheen" aria-hidden="true"></div>
-              
-              <!-- Card Preview Header -->
-              <div class="project-header">
-                <div class="project-terminal-bar">
-                  <span class="terminal-dot red"></span>
-                  <span class="terminal-dot yellow"></span>
-                  <span class="terminal-dot green"></span>
-                  <span class="project-category-tag">Individual Full-Stack Project</span>
+          <article class="card project-card reveal-on-scroll">
+            <div class="project-header">
+              <div class="project-type-tag">Full-Stack Web Platform</div>
+              <span class="project-role-badge">Individual Project</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">ShareMeal</h3>
+              <h4 class="project-subtitle">Food Donation and Distribution Platform</h4>
+
+              <p class="project-description">
+                A comprehensive full-stack web platform connecting food donors, NGOs, and volunteers through dedicated role-based dashboards to eliminate food waste and support community hunger relief efforts.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feature-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span><strong>4 Role-Based Dashboards:</strong> Dedicated interfaces for Admin, Donor, NGO, and Volunteer workflows.</span>
                 </div>
-                <div class="project-badge-pill cyan">
-                  <i class="fa-solid fa-hand-holding-heart"></i> Food Redistribution
+                <div class="feature-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span><strong>Relational Schema:</strong> Engineered in MySQL for structured donation tracking, verification, and logistics logs.</span>
                 </div>
-              </div>
-
-              <!-- Project Body -->
-              <div class="project-body">
-                <h3 class="project-title">ShareMeal</h3>
-                <h4 class="project-subtitle">Food Donation and Distribution Platform</h4>
-                
-                <p class="project-description">
-                  A full-stack web platform connecting food donors, NGOs, and volunteers through 
-                  role-based dashboards (Admin, Donor, NGO, Volunteer) to reduce food waste and support 
-                  hunger relief efforts.
-                </p>
-
-                <!-- Key Feature Highlights -->
-                <ul class="project-highlights">
-                  <li><i class="fa-solid fa-check text-neon-cyan"></i> <strong>4 Role Dashboards:</strong> Admin, Donor, NGO & Volunteer specific portals</li>
-                  <li><i class="fa-solid fa-check text-neon-cyan"></i> <strong>Relational MySQL Schema:</strong> Efficient logging of donations & distribution</li>
-                  <li><i class="fa-solid fa-check text-neon-cyan"></i> <strong>Node.js Backend Logic:</strong> Secure API data flow between client & DB</li>
-                  <li><i class="fa-solid fa-check text-neon-cyan"></i> <strong>Responsive React UI:</strong> Smooth cross-device donation flow</li>
-                </ul>
-
-                <!-- Tech Stack Badges -->
-                <div class="tech-stack-group">
-                  <span class="tech-badge"><i class="fa-brands fa-html5"></i> HTML</span>
-                  <span class="tech-badge"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-                  <span class="tech-badge"><i class="fa-brands fa-react"></i> React</span>
-                  <span class="tech-badge"><i class="fa-brands fa-node-js"></i> Node.js</span>
-                  <span class="tech-badge"><i class="fa-solid fa-database"></i> MySQL</span>
+                <div class="feature-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span><strong>Secure Backend Logic:</strong> REST API architecture with Node.js handling real-time data flows and state.</span>
                 </div>
-
-                <!-- Action Button -->
-                <div class="project-actions">
-                  <!-- 
-                    PASTE YOUR SHAREMEAL GITHUB REPO LINK HERE:
-                    Replace href="#" with: href="https://github.com/mariaputhi014-max/YOUR_REPO_NAME"
-                  -->
-                  <a href="https://github.com/mariaputhi014-max" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-neon-blue project-btn">
-                    <i class="fa-brands fa-github"></i>
-                    <span>GitHub Repository</span>
-                    <span class="btn-glow"></span>
-                  </a>
-                  <a href="#contact" class="btn btn-outline btn-neon-purple project-btn">
-                    <i class="fa-solid fa-circle-info"></i>
-                    <span>Inquire Details</span>
-                  </a>
+                <div class="feature-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span><strong>Responsive Interface:</strong> Modular React.js frontend ensuring cross-device operational accessibility.</span>
                 </div>
               </div>
-            </article>
-          </div>
+
+              <!-- Tech Badges -->
+              <div class="project-tech-stack">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">MySQL</span>
+                <span class="tech-tag">HTML5</span>
+                <span class="tech-tag">CSS3</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+
+              <!-- Project Actions -->
+              <div class="project-actions">
+                <!-- 
+                  PASTE YOUR SHAREMEAL GITHUB REPO LINK HERE:
+                  Update href="https://github.com/mariaputhi014-max/YOUR_REPO_NAME"
+                -->
+                <a href="https://github.com/mariaputhi014-max" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-github"></i>
+                  <span>View Repository</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-sm">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Inquire Architecture</span>
+                </a>
+              </div>
+            </div>
+          </article>
 
           <!-- Project 2: Skill Binimoy -->
-          <div class="project-card-wrapper reveal-on-scroll">
-            <article class="project-card tilt-card glass-card border-glow-purple" data-tilt>
-              <div class="card-sheen" aria-hidden="true"></div>
-              
-              <!-- Card Preview Header -->
-              <div class="project-header">
-                <div class="project-terminal-bar">
-                  <span class="terminal-dot red"></span>
-                  <span class="terminal-dot yellow"></span>
-                  <span class="terminal-dot green"></span>
-                  <span class="project-category-tag">Academic Course Project</span>
+          <article class="card project-card reveal-on-scroll">
+            <div class="project-header">
+              <div class="project-type-tag">Community &amp; EdTech Platform</div>
+              <span class="project-role-badge">Academic Project</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Skill Binimoy</h3>
+              <h4 class="project-subtitle">Peer-to-Peer Skill Sharing Platform</h4>
+
+              <p class="project-description">
+                A community-centric skill-exchange web application that allows users to barter expertise, offer workshops, and acquire new practical skills within an interactive collaborative platform.
+              </p>
+
+              <div class="project-features-list">
+                <div class="feature-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span><strong>Peer-to-Peer Exchange:</strong> Community matching engine allowing two-way skill barter and session booking.</span>
                 </div>
-                <div class="project-badge-pill purple">
-                  <i class="fa-solid fa-users-gear"></i> Community EdTech
+                <div class="feature-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span><strong>Supabase Integration:</strong> Real-time database synchronisation, row-level security, and authentication.</span>
                 </div>
-              </div>
-
-              <!-- Project Body -->
-              <div class="project-body">
-                <h3 class="project-title">Skill Binimoy</h3>
-                <h4 class="project-subtitle">Peer-to-Peer Skill Sharing Platform</h4>
-                
-                <p class="project-description">
-                  A skill-exchange web application that allows users to share their expertise 
-                  and learn new skills from others within a community-based platform.
-                </p>
-
-                <!-- Key Feature Highlights -->
-                <ul class="project-highlights">
-                  <li><i class="fa-solid fa-check text-neon-purple"></i> <strong>Skill Exchange Mechanism:</strong> Learn and exchange skills community-wide</li>
-                  <li><i class="fa-solid fa-check text-neon-purple"></i> <strong>Supabase Integration:</strong> Real-time data sync & robust user authentication</li>
-                  <li><i class="fa-solid fa-check text-neon-purple"></i> <strong>Python Backend:</strong> Modular services and data operations</li>
-                  <li><i class="fa-solid fa-check text-neon-purple"></i> <strong>Modern Frontend:</strong> Interactive React components and states</li>
-                </ul>
-
-                <!-- Tech Stack Badges -->
-                <div class="tech-stack-group">
-                  <span class="tech-badge"><i class="fa-brands fa-react"></i> React</span>
-                  <span class="tech-badge"><i class="fa-brands fa-python"></i> Python</span>
-                  <span class="tech-badge"><i class="fa-solid fa-bolt"></i> Supabase</span>
-                  <span class="tech-badge"><i class="fa-brands fa-js"></i> JavaScript</span>
+                <div class="feature-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span><strong>Python Backend Logic:</strong> Service-oriented processing handling matching algorithms and user data.</span>
                 </div>
-
-                <!-- Action Button -->
-                <div class="project-actions">
-                  <!-- 
-                    PASTE YOUR SKILL BINIMOY GITHUB REPO LINK HERE:
-                    Replace href="#" with: href="https://github.com/mariaputhi014-max/YOUR_REPO_NAME"
-                  -->
-                  <a href="https://github.com/mariaputhi014-max" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-neon-purple project-btn">
-                    <i class="fa-brands fa-github"></i>
-                    <span>GitHub Repository</span>
-                    <span class="btn-glow"></span>
-                  </a>
-                  <a href="#contact" class="btn btn-outline btn-neon-pink project-btn">
-                    <i class="fa-solid fa-circle-info"></i>
-                    <span>Inquire Details</span>
-                  </a>
+                <div class="feature-item">
+                  <i class="fa-solid fa-circle-check"></i>
+                  <span><strong>Interactive React UI:</strong> Smooth component lifecycle, responsive state management, and modern styling.</span>
                 </div>
               </div>
-            </article>
-          </div>
+
+              <!-- Tech Badges -->
+              <div class="project-tech-stack">
+                <span class="tech-tag">React.js</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">Realtime DB</span>
+              </div>
+
+              <!-- Project Actions -->
+              <div class="project-actions">
+                <!-- 
+                  PASTE YOUR SKILL BINIMOY GITHUB REPO LINK HERE:
+                  Update href="https://github.com/mariaputhi014-max/YOUR_REPO_NAME"
+                -->
+                <a href="https://github.com/mariaputhi014-max" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                  <i class="fa-brands fa-github"></i>
+                  <span>View Repository</span>
+                </a>
+                <a href="#contact" class="btn btn-secondary btn-sm">
+                  <i class="fa-solid fa-circle-info"></i>
+                  <span>Inquire Architecture</span>
+                </a>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 5. VIDEO INTRODUCTION SECTION ==================== -->
+    <!-- ==================== 6. VIDEO INTRODUCTION SECTION ==================== -->
     <section class="section video-section" id="video">
       <div class="container">
         <div class="section-header text-center reveal-on-scroll">
-          <p class="section-subtitle">// 05. SPOTLIGHT</p>
-          <h2 class="section-title">Get to <span class="neon-gradient-text">Know Me</span></h2>
-          <div class="neon-title-bar"></div>
-          <p class="section-lead-text">
-            A quick visual walkthrough of my software journey, design philosophy, and technical ambition.
+          <p class="section-subtitle">VIDEO SPOTLIGHT</p>
+          <h2 class="section-title">Get to Know Me</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            A concise overview of my technical foundation, engineering philosophy, and career goals.
           </p>
         </div>
 
-        <div class="video-container reveal-on-scroll">
-          <div class="neon-video-frame">
-            <!-- Cybernetic Corner Brackets -->
-            <span class="cyber-corner top-left"></span>
-            <span class="cyber-corner top-right"></span>
-            <span class="cyber-corner bottom-left"></span>
-            <span class="cyber-corner bottom-right"></span>
+        <div class="video-wrapper reveal-on-scroll">
+          <div class="card video-card">
+            <div class="video-meta-header">
+              <span class="video-title-tag"><i class="fa-solid fa-play"></i> Video Introduction</span>
+              <span class="video-status-tag">1080p HD</span>
+            </div>
+            
+            <div class="video-responsive-container">
+              <!-- Replace this src with your video link -->
+              <iframe 
+                class="embedded-video"
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&amp;modestbranding=1" 
+                title="Maria Hayet Puthi - Video Introduction"
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+              </iframe>
+            </div>
 
-            <div class="video-frame-inner">
-              <div class="video-top-control">
-                <span class="live-indicator"><span class="live-dot"></span> DEV_PROFILE_VIDEO.MP4</span>
-                <span class="video-res">1080P // 60FPS</span>
-              </div>
-
-              <!-- 
-                VIDEO PLAYER EMBED:
-                Replace this src with your video link (e.g. YouTube embed, Vimeo, or self-hosted mp4)
-              -->
-              <div class="video-aspect-box">
-                <!-- Replace this src with your video link -->
-                <iframe 
-                  class="embedded-video"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" 
-                  title="Maria Hayet Puthi - Video Introduction"
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowfullscreen>
-                </iframe>
-              </div>
-
-              <div class="video-caption-bar">
-                <p><i class="fa-solid fa-circle-play text-neon-cyan"></i> "Passionate about full-stack architectures and leveraging AI to craft future-proof applications."</p>
-              </div>
+            <div class="video-caption-bar">
+              <p>"Passionate about full-stack architectures and leveraging AI to craft future-proof, accessible applications."</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 6. RESUME / CV SECTION ==================== -->
+    <!-- ==================== 7. RESUME / CV SECTION ==================== -->
     <section class="section resume-section" id="resume">
       <div class="container">
-        <div class="resume-card-box glass-card border-glow-pink reveal-on-scroll">
-          <div class="resume-content-grid">
-            <div class="resume-info">
-              <div class="badge-tag pink"><i class="fa-solid fa-file-pdf"></i> Official Curriculum Vitae</div>
-              <h2 class="resume-title">Curriculum <span class="neon-gradient-text">Vitae</span></h2>
-              <p class="resume-summary">
-                Download my comprehensive CV featuring educational background, full-stack tech capabilities, 
-                individual & academic project milestones, and AI-assisted engineering practices.
+        <div class="card resume-card reveal-on-scroll">
+          <div class="resume-grid">
+            <div class="resume-text">
+              <span class="resume-tag">CURRICULUM VITAE</span>
+              <h2 class="resume-title">Download My Official Resume</h2>
+              <p class="resume-description">
+                Review a comprehensive summary of my education at AIUB (CGPA 3.61/4.00), technical stack proficiency, project architectures, and professional career objective.
               </p>
-              <div class="resume-highlights-row">
-                <div class="r-badge"><i class="fa-solid fa-check text-neon-pink"></i> AIUB B.Sc. in CSE (3.61/4.00)</div>
-                <div class="r-badge"><i class="fa-solid fa-check text-neon-pink"></i> React & Node.js Full-Stack</div>
-                <div class="r-badge"><i class="fa-solid fa-check text-neon-pink"></i> AI Workflows (Claude & ChatGPT)</div>
+              <div class="resume-key-points">
+                <div class="r-point"><i class="fa-solid fa-check"></i> B.Sc. in CSE from AIUB (3.61 / 4.00)</div>
+                <div class="r-point"><i class="fa-solid fa-check"></i> Proven Full-Stack Engineering (React, Node, Python, MySQL)</div>
+                <div class="r-point"><i class="fa-solid fa-check"></i> AI-Assisted Developer Workflows &amp; Version Control</div>
               </div>
             </div>
 
-            <div class="resume-action-area">
-              <div class="pulse-container">
-                <a href="cv.pdf" download="Maria_Hayet_Puthi_CV.pdf" class="btn btn-pulse-neon btn-primary btn-neon-pink" id="downloadCvBtn">
-                  <i class="fa-solid fa-cloud-arrow-down"></i>
-                  <span>Download My CV</span>
-                  <span class="btn-glow"></span>
-                </a>
-              </div>
-              <span class="resume-file-info">
-                <i class="fa-solid fa-circle-info"></i> PDF Format | Complete Profile
-              </span>
+            <div class="resume-action-box">
+              <a href="cv.pdf" download="Maria_Hayet_Puthi_CV.pdf" class="btn btn-primary btn-lg" id="downloadCvBtn">
+                <i class="fa-solid fa-file-arrow-down"></i>
+                <span>Download Resume (PDF)</span>
+              </a>
+              <span class="file-spec-text"><i class="fa-solid fa-circle-check"></i> Verified PDF Document</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== 7. CONTACT SECTION ==================== -->
+    <!-- ==================== 8. CONTACT SECTION ==================== -->
     <section class="section contact-section" id="contact">
       <div class="container">
         <div class="section-header text-center reveal-on-scroll">
-          <p class="section-subtitle">// 06. REACH OUT</p>
-          <h2 class="section-title">Get In <span class="neon-gradient-text">Touch</span></h2>
-          <div class="neon-title-bar"></div>
-          <p class="section-lead-text">
-            Have an open role, project opportunity, or want to collaborate? My inbox is always open.
+          <p class="section-subtitle">GET IN TOUCH</p>
+          <h2 class="section-title">Contact &amp; Collaboration</h2>
+          <div class="section-divider"></div>
+          <p class="section-description">
+            Looking for a dedicated developer for contract roles, full-time engineering positions, or project collaborations? Feel free to reach out.
           </p>
         </div>
 
         <div class="contact-grid">
           <!-- Left: Direct Info Cards -->
-          <div class="contact-info-col reveal-on-scroll">
-            <div class="contact-card glass-card border-glow-blue">
-              <div class="c-icon cyan"><i class="fa-solid fa-envelope"></i></div>
-              <div class="c-details">
-                <span class="c-label">Email</span>
-                <a href="mailto:mariaputhi014@gmail.com" class="c-value hover-cyan">mariaputhi014@gmail.com</a>
+          <div class="contact-info-column reveal-on-scroll">
+            <div class="card contact-item-card">
+              <div class="contact-icon-box"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-text-box">
+                <span class="contact-label">Email Address</span>
+                <a href="mailto:mariaputhi014@gmail.com" class="contact-link">mariaputhi014@gmail.com</a>
               </div>
-              <button class="copy-btn" data-copy="mariaputhi014@gmail.com" aria-label="Copy Email">
+              <button class="copy-action-btn" data-copy="mariaputhi014@gmail.com" aria-label="Copy Email">
                 <i class="fa-regular fa-copy"></i>
               </button>
             </div>
 
-            <div class="contact-card glass-card border-glow-purple">
-              <div class="c-icon purple"><i class="fa-solid fa-phone"></i></div>
-              <div class="c-details">
-                <span class="c-label">Phone</span>
-                <a href="tel:+8801609651151" class="c-value hover-purple">+880 1609651151</a>
+            <div class="card contact-item-card">
+              <div class="contact-icon-box"><i class="fa-solid fa-phone"></i></div>
+              <div class="contact-text-box">
+                <span class="contact-label">Phone / WhatsApp</span>
+                <a href="tel:+8801609651151" class="contact-link">+880 1609651151</a>
               </div>
-              <button class="copy-btn" data-copy="+8801609651151" aria-label="Copy Phone">
+              <button class="copy-action-btn" data-copy="+8801609651151" aria-label="Copy Phone">
                 <i class="fa-regular fa-copy"></i>
               </button>
             </div>
 
-            <div class="contact-card glass-card border-glow-pink">
-              <div class="c-icon pink"><i class="fa-solid fa-location-dot"></i></div>
-              <div class="c-details">
-                <span class="c-label">Location</span>
-                <span class="c-value">Bashundhara, Dhaka, Bangladesh</span>
+            <div class="card contact-item-card">
+              <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-text-box">
+                <span class="contact-label">Primary Location</span>
+                <span class="contact-link">Bashundhara, Dhaka, Bangladesh</span>
               </div>
             </div>
 
-            <div class="contact-card glass-card border-glow-blue">
-              <div class="c-icon cyan"><i class="fa-brands fa-github"></i></div>
-              <div class="c-details">
-                <span class="c-label">GitHub</span>
-                <a href="https://github.com/mariaputhi014-max" target="_blank" rel="noopener noreferrer" class="c-value hover-cyan">
+            <div class="card contact-item-card">
+              <div class="contact-icon-box"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-text-box">
+                <span class="contact-label">GitHub Profile</span>
+                <a href="https://github.com/mariaputhi014-max" target="_blank" rel="noopener noreferrer" class="contact-link">
                   github.com/mariaputhi014-max
                 </a>
               </div>
-              <a href="https://github.com/mariaputhi014-max" target="_blank" rel="noopener noreferrer" class="external-btn" aria-label="Visit GitHub">
+              <a href="https://github.com/mariaputhi014-max" target="_blank" rel="noopener noreferrer" class="external-action-btn" aria-label="Open GitHub">
                 <i class="fa-solid fa-arrow-up-right-from-square"></i>
               </a>
             </div>
           </div>
 
-          <!-- Right: Animated Contact Form -->
-          <div class="contact-form-col reveal-on-scroll">
-            <div class="contact-form-card glass-card border-glow-purple">
+          <!-- Right: Contact Form -->
+          <div class="contact-form-column reveal-on-scroll">
+            <div class="card contact-form-card">
+              <h3 class="form-title">Send a Direct Message</h3>
               <form class="contact-form" id="contactForm" novalidate>
                 <div class="form-group">
-                  <label for="contactName" class="form-label">Your Name</label>
-                  <div class="input-wrapper">
-                    <i class="fa-solid fa-user form-icon"></i>
-                    <input type="text" id="contactName" name="name" class="neon-input" placeholder="e.g. Alex Johnson" required>
-                  </div>
+                  <label for="contactName" class="form-label">Full Name <span class="required">*</span></label>
+                  <input type="text" id="contactName" name="name" class="form-control" placeholder="e.g. Alex Johnson" required>
                   <span class="field-error" id="nameError"></span>
                 </div>
 
                 <div class="form-group">
-                  <label for="contactEmail" class="form-label">Email Address</label>
-                  <div class="input-wrapper">
-                    <i class="fa-solid fa-at form-icon"></i>
-                    <input type="email" id="contactEmail" name="email" class="neon-input" placeholder="e.g. alex@example.com" required>
-                  </div>
+                  <label for="contactEmail" class="form-label">Work Email <span class="required">*</span></label>
+                  <input type="email" id="contactEmail" name="email" class="form-control" placeholder="alex@company.com" required>
                   <span class="field-error" id="emailError"></span>
                 </div>
 
                 <div class="form-group">
                   <label for="contactSubject" class="form-label">Subject</label>
-                  <div class="input-wrapper">
-                    <i class="fa-solid fa-comment-dots form-icon"></i>
-                    <input type="text" id="contactSubject" name="subject" class="neon-input" placeholder="e.g. Contract Web Developer Opportunity" required>
-                  </div>
+                  <input type="text" id="contactSubject" name="subject" class="form-control" placeholder="e.g. Contract Web Developer Role" required>
                 </div>
 
                 <div class="form-group">
-                  <label for="contactMessage" class="form-label">Message</label>
-                  <div class="input-wrapper">
-                    <i class="fa-solid fa-message form-icon message-icon"></i>
-                    <textarea id="contactMessage" name="message" rows="5" class="neon-input neon-textarea" placeholder="Hello Maria, I would like to discuss..." required></textarea>
-                  </div>
+                  <label for="contactMessage" class="form-label">Message <span class="required">*</span></label>
+                  <textarea id="contactMessage" name="message" rows="5" class="form-control textarea" placeholder="Hello Maria, I would like to discuss..." required></textarea>
                   <span class="field-error" id="messageError"></span>
                 </div>
 
-                <button type="submit" class="btn btn-primary btn-neon-blue submit-btn" id="submitBtn">
+                <button type="submit" class="btn btn-primary submit-btn" id="submitBtn">
                   <i class="fa-solid fa-paper-plane"></i>
                   <span>Send Message</span>
-                  <span class="btn-glow"></span>
                 </button>
               </form>
             </div>
@@ -956,47 +766,44 @@
   </main>
 
   <!-- ==================== FOOTER ==================== -->
-  <footer class="footer" id="footer">
-    <!-- 1. Full-Width Audio Waveform Line (Top of Footer - Samsung One UI Inspired) -->
-    <div class="footer-wave-container footer-wave-top" aria-hidden="true">
-      <div class="footer-neon-line"></div>
-      <canvas id="footerTopWaveCanvas" class="footer-wave-canvas"></canvas>
-    </div>
-
+  <footer class="footer">
     <div class="container footer-container">
-      <div class="footer-left">
-        <a href="#hero" class="nav-logo">
-          <span class="logo-bracket">&lt;</span><span class="logo-name">Maria</span><span class="logo-dot">.</span><span class="logo-bracket">/&gt;</span>
-        </a>
-        <p class="footer-tagline">Full-Stack Developer | AI Enthusiast</p>
-      </div>
-
-      <div class="footer-socials">
-        <a href="https://github.com/mariaputhi014-max" target="_blank" rel="noopener noreferrer" class="f-social" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="mailto:mariaputhi014@gmail.com" class="f-social" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
-        <a href="tel:+8801609651151" class="f-social" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
-      </div>
-
-      <div class="footer-copyright">
-        <p>&copy; 2026 Maria Hayet Puthi. All rights reserved.</p>
-        <!-- 2. Animated Underline Audio Waveform (Under Copyright) -->
-        <div class="footer-wave-container footer-wave-bottom" aria-hidden="true">
-          <div class="footer-neon-underline"></div>
-          <canvas id="footerBottomWaveCanvas" class="footer-wave-canvas"></canvas>
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-badge">MHP</span>
+          <span class="brand-name">Maria Hayet Puthi</span>
         </div>
+        <p class="footer-tagline">Full-Stack Developer &amp; AI Enthusiast | Dhaka, Bangladesh</p>
+      </div>
+
+      <div class="footer-nav-links">
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-social-row">
+        <a href="https://github.com/mariaputhi014-max" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="mailto:mariaputhi014@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+        <a href="tel:+8801609651151" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Maria Hayet Puthi. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
-  <!-- Scroll-To-Top Circular Button with Progress Ring -->
+  <!-- Scroll-To-Top Button -->
   <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top of page">
-    <svg class="progress-ring" width="46" height="46">
-      <circle class="progress-ring-circle" stroke="#00f0ff" stroke-width="3" fill="transparent" r="20" cx="23" cy="23"/>
-    </svg>
     <i class="fa-solid fa-arrow-up"></i>
   </button>
 
-  <!-- Toast Notification Container -->
+  <!-- Toast Notification Feedback -->
   <div class="toast-notification" id="toastNotification" role="alert" aria-live="assertive">
     <div class="toast-icon" id="toastIcon"><i class="fa-solid fa-circle-check"></i></div>
     <div class="toast-message" id="toastMessage">Action completed successfully!</div>
